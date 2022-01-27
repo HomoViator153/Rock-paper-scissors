@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Papier kamień nożyczki</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="grid-container">
+
+        <h1 class="header">Papier kamień nożyczki</h1>
+        <h2 class="choice">Co wybierasz?</h2>
+
+        <img src="img/papier.jpg" alt="papier" data-key="Papier">
+        <img src="img/kamien.jpg" alt="kamień" data-key="Kamień">
+        <img src="img/nozyczki.jpg" alt="nożyczki" data-key="Nożyczki">
+
+        <div class="lockIn">
+            <button>Zatwierdź</button>
+        </div>
+
+        <h2 class="winner">Zwycięzca: <span></span></h2>
+        <div class="choices">
+            <h3>Wybory: </h3>
+            <p>Wybór gracza: <span class="playerChoice"></span></p>
+            <p>Wybór komputera: <span class="aiChoice"></span></p>
+        </div>
+        <div class="results">
+            <h3>Wyniki: </h3>
+            <p>Rozegrane gry: <span class="gPlayed">0</span></p>
+            <p>Wygrane gry: <span class="gWon">0</span></p>
+            <p>Przegrane gry: <span class="gLost">0</span></p>
+            <p>Remisy: <span class="gDraw">0</span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

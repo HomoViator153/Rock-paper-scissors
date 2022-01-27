@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+}
+
+h2 {
+    font-weight: 400;
+}
+
+.header {
+    grid-area: header;
+    text-transform: uppercase;
+}
+
+.choice {
+    grid-area: choice;
+    align-self: end;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+img {
+    border: 3px solid rgb(241, 215, 68);
+}
+
+img:nth-of-type(1) {
+    grid-area: img1;
+    justify-self: end;
+}
+
+img:nth-of-type(2) {
+    grid-area: img2;
+}
+
+img:nth-of-type(3) {
+    grid-area: img3;
+    justify-self: start;
+}
+
+.lockIn {
+    grid-area: lockIn;
+    margin-top: 50px;
+}
+
+.lockIn button {
+    margin-top: 30px;
+    padding: 15px 30px;
+    border: 3px solid rgb(241, 215, 68);
+    background-color: rgb(241, 215, 68);
+    color: black;
+    font-size: 25px;
+    text-transform: uppercase;
+    transition: ease 0.15s;
+}
+
+.lockIn button:hover {
+    background-color: rgb(241, 215, 68);
+    border: 3px solid black;
+}
+
+.lockIn button:focus {
+    outline: none;
+    outline-offset: none;
+}
+
+.lockIn button:active {
+    transform: none;
+}
+
+.winner {
+    grid-area: winner;
+    text-transform: uppercase;
+}
+
+.choices {
+    grid-area: choices;
+    justify-self: end;
+}
+
+.results {
+    grid-area: results;
+    justify-self: start;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.2fr 0.5fr 0.5fr;
+    grid-template-areas:
+        "header header header"
+        "choice choice choice"
+        "img1 img2 img3"
+        ". lockIn ."
+        ". . ."
+        "winner winner winner"
+        "choices . results";
+    justify-items: center;
+}
+
+.clicked {
+    border: 3px solid black;
+}
+
+.winner span {
+    padding-left: 10px;
+    font-weight: 600;
+}
+
+.choices span {
+    font-weight: 600;
+}
+
+.results span {
+    font-weight: 600;
+}
+
+.gWon {
+    color: green;
+}
+
+.gLost {
+    color: red;
+}
+
+.gDraw {
+    color: gray;
+}
